@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>2026 Reading Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1 data-testid="app-title">💗 My 2026 Reading Tracker 💗</h1>
+
+   
+    <div class="goal-container" data-testid="goal-section">
+        <h3>🎯 Goal: 25 Books</h3>
+        <div class="progress-bar">
+            <div id="progressFill" data-testid="progress-fill"></div>
+        </div>
+        <p id="progressText" data-testid="progress-text">0 / 25</p>
+    </div>
+
+    <div class="form-container" data-testid="book-form">
+        <input 
+            type="text" 
+            id="title" 
+            placeholder="Book Title"
+            data-testid="title-input"
+        >
+
+        <input 
+            type="text" 
+            id="duration" 
+            placeholder="Duration (e.g. 7 days)"
+            data-testid="duration-input"
+        >
+        
+        <select 
+            id="month"
+            data-testid="month-select"
+        >
+            <option value="">Select Month</option>
+            <option>January</option>
+            <option>February</option>
+            <option>March</option>
+            <option>April</option>
+            <option>May</option>
+            <option>June</option>
+            <option>July</option>
+            <option>August</option>
+            <option>September</option>
+            <option>October</option>
+            <option>November</option>
+            <option>December</option>
+        </select>
+
+        <button 
+            onclick="addBook()" 
+            data-testid="add-button"
+        >
+            Add Book 💕
+        </button>
+    </div>
+
+    <h2>📚 Books List</h2>
+    <ul id="bookList" data-testid="book-list"></ul>
+
+    <h2>📊 Monthly Summary</h2>
+    <div id="monthlySummary" data-testid="monthly-summary"></div>
+
+    <h2>🌟 Total Books in 2026</h2>
+    <p id="yearTotal" data-testid="year-total">0</p>
+
+<script src="script.js"></script>
+</body>
+</html>
