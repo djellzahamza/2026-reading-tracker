@@ -6,7 +6,7 @@ body {
 }
 
 h1 {
-    color: #ff4da6;
+    color: #ff4d4d;
 }
 
 .form-container {
@@ -39,7 +39,7 @@ ul {
 }
 
 li {
-    background-color: #fff0f5;
+    background-color: #f0fff8;
     margin: 5px;
     padding: 10px;
     border-radius: 8px;
@@ -61,7 +61,7 @@ li {
 /* 💗 Soft pink edit & delete buttons */
 
 .edit-btn {
-    background-color: #ffb3d9;
+    background-color: green;
     color: white;
     padding: 5px 10px;
     font-size: 12px;
@@ -73,7 +73,7 @@ li {
 }
 
 .delete-btn {
-    background-color: #ffc2d1; /* soft pink instead of red */
+    background-color: red; /* soft pink instead of red */
     color: white;
     padding: 5px 10px;
     font-size: 12px;
